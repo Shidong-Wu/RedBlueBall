@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RedBlueBall.MainPage">
+    
+    <StackLayout x:Name="stacklayout">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="双色球随机号码" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+
+        <Button Text="Random Balls" Clicked="Button_Clicked"></Button>
+        <ScrollView>
+            <StackLayout x:Name="resultLayout" >
+
+            </StackLayout>
+        </ScrollView>
+        <Button Text="Clear" Clicked="Clear_Clicked" BackgroundColor="LightSkyBlue" ></Button>
+    </StackLayout>
+</ContentPage>
